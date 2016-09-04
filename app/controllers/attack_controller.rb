@@ -2,8 +2,8 @@ class AttackController < ApplicationController
 	skip_before_action :verify_authenticity_token
 	
 	def attack
-		@attackmode = params['_json'][0]['attackmode']
-		@radar = params['_json'][0]['radar']
+		@attackmode = params['attack-mode']
+		@radar = params['radar']
 
 		Position.loadData(@radar)
 
