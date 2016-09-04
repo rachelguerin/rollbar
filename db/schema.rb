@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160904112359) do
+ActiveRecord::Schema.define(version: 20160904141425) do
+
+  create_table "attacks", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "positions", force: :cascade do |t|
     t.integer  "x"

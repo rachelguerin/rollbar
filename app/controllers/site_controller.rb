@@ -5,7 +5,4 @@ class SiteController < ApplicationController
 		render 'home'
 	end
 
-	def attack
-		render 'attack'
-	end
 end
